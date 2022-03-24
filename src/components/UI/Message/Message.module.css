@@ -1,0 +1,132 @@
+.Main {
+  position: fixed;
+  z-index: 200;
+  right: 40px;
+  bottom: 40px;
+  width: 438px;
+  height: 132px;
+}
+.Container {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 438px;
+  height: 132px;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bubble1 {
+  position: absolute;
+  right: 380px;
+  bottom: 130px;
+}
+
+.Bubble2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.Text {
+  width: 50%;
+  height: 70%;
+  margin-left: 30%;
+  margin-right: 20%;
+  user-select: none;
+}
+.Text h4 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.Text p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.Close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 25px;
+  height: 25px;
+}
+
+.Close:hover {
+  cursor: pointer;
+}
+
+.Success .Container {
+  background-color: #b5ffa2;
+}
+
+.Success .Bubble1 path:first-child,
+.Success .Bubble2 circle,
+.Success .Bubble2 path {
+  fill: #7ded61;
+}
+.Success .Bubble1 path:last-child {
+  display: none;
+}
+
+.Error .Container {
+  background-color: #f64b3c;
+}
+.Error .Bubble1 path:first-child,
+.Error .Bubble2 circle,
+.Error .Bubble2 path {
+  fill: #c81912;
+}
+
+.Error .Bubble1 path:nth-child(2) {
+  display: none;
+}
+.Error .Close path {
+  fill: white;
+}
+.Error .Text {
+  color: white;
+  width: 70%;
+  height: 80%;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+@media (max-width: 40rem) {
+  .Main {
+    right: 0;
+    bottom: 20px;
+    width: 288px;
+  }
+
+  .Container {
+    width: 288px;
+  }
+
+  .Bubble1 {
+    position: absolute;
+    right: 240px;
+    bottom: 130px;
+  }
+
+  .Error .Bubble2 {
+    left: -10px;
+  }
+  .Error .Text {
+    width: 90%;
+    height: 80%;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 13%;
+  }
+
+  .Text h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

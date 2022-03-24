@@ -1,0 +1,38 @@
+.Toolbar {
+  width: 100%;
+  height: 116px;
+  /* position: absolute; */
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  background-color: #ffffff;
+}
+.Button_section {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Button {
+  width: 227px;
+  height: 52px;
+}
+
+@media (max-width: 40rem) {
+  .Toolbar {
+    height: 77px;
+    padding: 0 1rem;
+    position: absolute;
+  }
+  .Button_section {
+    width: 25%;
+  }
+  .Button {
+    width: 36px;
+    height: 36px;
+  }
+}

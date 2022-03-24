@@ -1,0 +1,45 @@
+.Profile {
+  width: 30%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.ImageContainer {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  margin-right: 1.25rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageContainer img {
+  width: 100%;
+}
+
+.ImageContainer path:hover {
+  fill: #585cc6;
+}
+
+.Profile p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 40rem) {
+  .Surname {
+    display: none;
+  }
+  .Profile p {
+    font-size: 12px;
+  }
+  .ImageContainer {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,68 @@
+.App {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Content {
+  width: 100%;
+  height: 600px;
+  background: no-repeat url("./assets/background.svg"), #585cc6;
+  background-position: top -136px left 839px;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.Content h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 7.75rem;
+  color: #ffffff;
+  display: block;
+  width: 85%;
+  margin: 5.5rem 5rem;
+  max-width: 1125px;
+  user-select: none;
+}
+
+.ImageContainer {
+  width: 383px;
+  min-width: 383px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.ImageContainer img {
+  width: 100%;
+}
+
+@media (max-width: 40rem) {
+  .App {
+    width: 100%;
+  }
+  .Content {
+    margin-top: 77px;
+    background-position: top -236px left 39px;
+  }
+  .Content h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: #ffffff;
+    width: 85%;
+    height: auto;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImageContainer {
+    width: 95%;
+    min-width: auto;
+    margin-left: 5%;
+  }
+}

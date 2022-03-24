@@ -1,0 +1,87 @@
+.Group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-right: 1rem;
+  margin-top: 1.3rem;
+}
+
+.Group label {
+  user-select: none;
+}
+
+.Input,
+.Textarea {
+  display: block;
+  min-height: 42px;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  margin-top: 0.9rem;
+  padding: 15px 12px;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+}
+
+.Textarea {
+  padding: 12px;
+  overflow: hidden;
+}
+
+.Input:hover,
+.Input:active,
+.Textarea:hover,
+.Textarea:active {
+  border-color: #585cc6;
+}
+
+.Input:disabled,
+.Textarea:disabled {
+  border-color: #e0e0e0;
+  caret-color: transparent;
+  background-color: #ffffff;
+}
+
+.Input:disabled::placeholder,
+.Textarea:disabled::placeholder {
+  color: #e0e0e0;
+}
+/* 
+.Textarea-container {
+  position: relative;
+} */
+
+/* .Counter {
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  color: #8a8a8a;
+  user-select: none;
+} */
+
+.Inactive {
+  color: #8a8a8a;
+}
+
+.Error {
+  border-color: #eb5757;
+}
+
+.Error-message {
+  display: flex;
+  align-items: center;
+  color: #eb5757;
+  font-size: 0.75rem;
+  line-height: 1.4rem;
+}
+
+.Error-message p {
+  margin-left: 0.2rem;
+}

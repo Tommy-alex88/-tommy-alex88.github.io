@@ -1,0 +1,10 @@
+.Logo {
+  user-select: none;
+}
+
+@media (max-width: 40rem) {
+  .Logo img {
+    width: 60px;
+    height: 36px;
+  }
+}

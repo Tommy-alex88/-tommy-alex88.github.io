@@ -1,0 +1,200 @@
+.Button,
+.Button.Minimize {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  outline: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Button:after,
+.Button.Minimize:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #585cc6;
+  border-radius: 2px;
+  z-index: -2;
+}
+
+.Button:before,
+.Button.Minimize:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #696dc8;
+  border-radius: 0 0 2px 2px;
+  z-index: -1;
+}
+.Button:hover,
+.Button.Minimize:hover {
+  cursor: pointer;
+}
+
+.Button:hover:before,
+.Button.Minimize:hover:before {
+  width: 60%;
+}
+
+.Plus path {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.Button .Plus,
+.Button.Minimize .Plus {
+  display: none;
+  margin-right: 10px;
+}
+
+.Button .Humanoid,
+.Button.Minimize .Humanoid {
+  display: none;
+}
+
+.Button_Icon,
+.Button_Icon.Minimize {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  outline: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Button_Icon:after,
+.Button_Icon.Minimize:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #585cc6;
+  border-radius: 2px;
+  z-index: -2;
+}
+
+.Button_Icon:before,
+.Button_Icon.Minimize:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #696dc8;
+  border-radius: 0 0 2px 2px;
+  z-index: -1;
+}
+
+.Button_Icon:hover,
+.Button_Icon.Minimize:hover {
+  cursor: pointer;
+}
+
+.Button_Icon:hover:before,
+.Button_Icon.Minimize:hover:before {
+  width: 60%;
+}
+
+.Button_Icon .Plus,
+.Button_Icon.Minimize .Plus {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Button_Icon .Humanoid,
+.Button_Icon.Minimize .Humanoid {
+  display: none;
+}
+
+.Text,
+.Minimize .Text {
+  user-select: none;
+}
+
+:disabled {
+  background-color: #8a8a8a;
+}
+:disabled:before {
+  background-color: #8a8a8a;
+}
+:disabled:after {
+  background-color: #8a8a8a;
+}
+
+@media (max-width: 40rem) {
+  .Button,
+  .Button_Icon {
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+  }
+
+  .Plus path {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .Button.Minimize,
+  .Button_Icon.Minimize {
+    background-color: #585cc6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Button.Minimize:after,
+  .Button_Icon.Minimize:after {
+    content: none;
+  }
+
+  .Button.Minimize:before,
+  .Button_Icon.Minimize:before {
+    content: none;
+  }
+
+  .Button.Minimize .Text,
+  .Button_Icon.Minimize .Text {
+    display: none;
+  }
+
+  .Button_Icon .Plus,
+  .Button_Icon.Minimize .Plus {
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  .Button.Minimize .Plus {
+    display: none;
+  }
+  .Button_Icon.Minimize .Plus {
+    margin: 0;
+  }
+
+  .Button.Minimize .Humanoid {
+    display: block;
+  }
+}
